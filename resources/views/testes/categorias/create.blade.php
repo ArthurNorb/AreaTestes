@@ -9,14 +9,12 @@
             Criar Categoria
         </h1>
 
-        <!-- Formulário de criação de categoria -->
         <form action="{{ route('categorias.store') }}" method="POST">
             @csrf
 
             <div class="mb-4">
-                <label for="icone" class="block text-gray-700 font-medium">Ícone</label>
-                <input type="text" name="icone" id="icone" placeholder="Ex: fa-solid fa-user"
-                       class="w-full mt-1 p-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500">
+                <label class="block text-gray-700 font-medium mb-2">Ícone</label>
+                <livewire:icon-picker />
             </div>
 
             <div class="mb-4">

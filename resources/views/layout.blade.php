@@ -5,15 +5,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title', 'Meu Projeto')</title>
-    
+
     <!-- Tailwind CSS (via CDN ou local) -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <!-- Alpine.js -->
     <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
-    <!-- Lucide Icons -->
-    <script src="https://unpkg.com/lucide@latest/dist/lucide.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <!-- Livewire Styles -->
     @livewireStyles
+
+    <style>
+        .icon-button {
+            background: none;
+            border: none;
+            font-size: 24px;
+            margin: 10px;
+            cursor: pointer;
+        }
+
+        .icon-button i {
+            color: #007bff;
+        }
+
+        .icon-button:hover i {
+            color: #0056b3;
+        }
+    </style>
 </head>
 
 <body class="bg-gradient-to-r from-blue-50 to-white min-h-screen flex flex-col">
@@ -21,12 +38,14 @@
     <header class="bg-white shadow">
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
             <!-- Logo / Título -->
-            <a href="{{ url('/') }}" class="text-2xl font-bold text-blue-600 hover:text-blue-800 transition-colors">
+            <a href="{{ url('/') }}"
+                class="text-2xl font-bold text-blue-600 hover:text-blue-800 transition-colors">
                 Área de testes
             </a>
             <!-- Menu para telas médias e maiores -->
             <div class="hidden md:flex space-x-6">
-                <a href="{{ url('/') }}" class="text-gray-700 hover:text-blue-600 transition-colors">Página Inicial</a>
+                <a href="{{ url('/') }}" class="text-gray-700 hover:text-blue-600 transition-colors">Página
+                    Inicial</a>
                 <a href="{{ url('/testes') }}" class="text-gray-700 hover:text-blue-600 transition-colors">Testes</a>
             </div>
             <!-- Botão de menu para telas pequenas -->
@@ -48,13 +67,13 @@
     </main>
 
     <!-- Rodapé -->
-    <footer class="bg-gray-200">
+    {{-- <footer class="bg-gray-200">
         <div class="container mx-auto px-6 py-4 text-center text-gray-700">
             <p>© {{ date('Y') }} Masterix Sistemas</p>
             <p>Desenvolvido por Arthur Norberto</p>
         </div>
-    </footer>
-    
+    </footer> --}}
+
     <!-- Livewire Scripts -->
     @livewireScripts
 </body>

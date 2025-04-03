@@ -16,3 +16,7 @@ Route::get('/testes/icones-personalizados', function () {
 })->name('icones-personalizados');
 
 Route::resource('categorias', CategoriasControllers::class);
+
+Route::get('/testes/icon-picker', function () {
+    return view('testes.icon-picker');
+})->name('icon-picker');
