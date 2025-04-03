@@ -11,7 +11,7 @@ class CategoriasControllers extends Controller
      */
     public function index()
     {
-        //
+        return view('testes.categorias.index');
     }
 
     /**

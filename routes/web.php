@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CategoriasControllers;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -13,3 +14,5 @@ Route::get('/testes', function () {
 Route::get('/testes/icones-personalizados', function () {
     return view('testes.icones-personalizados');
 })->name('icones-personalizados');
+
+Route::resource('categorias', CategoriasControllers::class);

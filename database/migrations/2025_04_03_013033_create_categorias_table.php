@@ -12,11 +12,11 @@ return new class extends Migration
     public function up()
 {
     Schema::create('categorias', function (Blueprint $table) {
-        $table->id();
-        $table->string('icone');       // Armazena o ícone
-        $table->string('cor');         // Armazena a cor
-        $table->string('nome');        // Armazena o nome
-        $table->text('descricao')->nullable(); // Armazena a descrição (opcional)
+        $table->increments('id');
+        $table->string('icone');      
+        $table->string('cor');        
+        $table->string('nome');        
+        $table->text('descricao')->nullable(); 
         $table->timestamps();
     });
 }
