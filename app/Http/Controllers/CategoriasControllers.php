@@ -19,7 +19,7 @@ class CategoriasControllers extends Controller
      */
     public function create()
     {
-        //
+        return view('testes.categorias.create');
     }
 
     /**

@@ -24,7 +24,7 @@
                 class="mr-5 bg-blue-600 text-white font-semibold px-6 py-3 rounded-lg shadow hover:bg-blue-700 transition duration-300">
                 Listar Categorias
             </a>
-            <a href="{{ url('/') }}"
+            <a href="{{ route('categorias.create') }}"
                 class="bg-blue-600 text-white font-semibold px-6 py-3 rounded-lg shadow hover:bg-blue-700 transition duration-300">
                 Criar Categoria
             </a>
