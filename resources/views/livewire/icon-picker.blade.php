@@ -13,6 +13,7 @@
         @if ($selectedIcon)
             <h4>Ícone Selecionado:</h4>
             <i class="fas fa-{{ $selectedIcon }}" style="font-size: 32px;"></i>
+            <p>{{ $selectedIcon }}</p>
         @endif
     </div>
 </div>
