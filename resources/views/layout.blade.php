@@ -13,24 +13,6 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <!-- Livewire Styles -->
     @livewireStyles
-
-    <style>
-        .icon-button {
-            background: none;
-            border: none;
-            font-size: 24px;
-            margin: 10px;
-            cursor: pointer;
-        }
-
-        .icon-button i {
-            color: #007bff;
-        }
-
-        .icon-button:hover i {
-            color: #0056b3;
-        }
-    </style>
 </head>
 
 <body class="bg-gradient-to-r from-blue-50 to-white min-h-screen flex flex-col">

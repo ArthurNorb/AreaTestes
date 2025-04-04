@@ -11,12 +11,11 @@ class IconPicker extends Component
 
     public function mount()
     {
-        // Lê o arquivo JSON e transforma em array
         $jsonPath = storage_path('app/icons.json');
         if (file_exists($jsonPath)) {
             $json = file_get_contents($jsonPath);
             $iconsArray = json_decode($json, true);
-            $this->icons = array_keys($iconsArray); // Pegamos só os nomes dos ícones
+            $this->icons = array_keys($iconsArray);
         }
     }
 
