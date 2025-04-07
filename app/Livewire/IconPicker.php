@@ -8,6 +8,15 @@ class IconPicker extends Component
 {
     public $selectedIcon = '';
     public $icons = [];
+    public $bgColor = '#94a3b8';
+    public $colors = [ // todas as cores como bg-cor-400
+        '#94a3b8', // slate 
+        '#f87171', // vermelho
+        '#facc15', // amarelo
+        '#60a5fa', // azul
+        '#4ade80', // verde
+        '#000000' // preto
+    ];
 
     public function mount()
     {
@@ -19,13 +28,24 @@ class IconPicker extends Component
         }
     }
 
+    public function selectIcon($icon)
+    {
+        $this->selectedIcon = "fas fa-" . $icon;
+    }
+
+    public function selectColor($color)
+    {
+        $this->bgColor = $color;
+    }
+
+    public function testequalquer()
+    {
+        dd("ok");
+    }
+
     public function render()
     {
         return view('livewire.icon-picker');
     }
 
-    public function selectIcon($icon)
-    {
-        $this->selectedIcon = $icon;
-    }
 }

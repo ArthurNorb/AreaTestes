@@ -8,11 +8,10 @@
 
     <!-- Tailwind CSS (via CDN ou local) -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <!-- Alpine.js -->
-    <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <!-- Livewire Styles -->
     @livewireStyles
+    @vite(['resources/js/app.js'])
 </head>
 
 <body class="bg-gradient-to-r from-blue-50 to-white min-h-screen flex flex-col">

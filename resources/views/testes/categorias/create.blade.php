@@ -17,12 +17,6 @@
         </div>
 
         <div class="mb-4">
-            <label for="cor" class="block text-gray-700 font-medium">Cor</label>
-            <input type="text" name="cor" id="cor" placeholder="Ex: #3490dc"
-                   class="w-full mt-1 p-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500">
-        </div>
-
-        <div class="mb-4">
             <label for="nome" class="block text-gray-700 font-medium">Nome</label>
             <input type="text" name="nome" id="nome" placeholder="Nome da categoria"
                    class="w-full mt-1 p-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500">
